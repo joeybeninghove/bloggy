@@ -1,0 +1,12 @@
+permalink: /:title/
+exclude:
+  - /src
+  - /layouts
+  - /includes
+  - /Gemfile
+  - /Gemfile.lock
+  - /package.json
+  - /yarn.lock
+  - /node_modules
+  - /tailwind.js
+  - /webpack.config.js
