@@ -305,7 +305,7 @@ module.exports = {
     'none': 1,
     'tight': 1.25,
     'normal': 1.5,
-    'loose': 2,
+    'loose': 1.8,
   },
 
 
@@ -463,6 +463,9 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '80': '20rem',
+    '96': '24rem',
+    '128': '32rem',
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',
@@ -657,6 +660,13 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '16': '4rem',
+    '24': '6rem',
+    '28': '7rem',
+    '32': '8rem',
+    '64': '16rem',
+    '96': '24rem',
+    '128': '32rem'
   },
 
 
@@ -818,9 +828,9 @@ module.exports = {
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
     borderColors: ['responsive', 'hover'],
-    borderRadius: ['responsive'],
-    borderStyle: ['responsive'],
-    borderWidths: ['responsive'],
+    borderRadius: ['responsive', 'hover'],
+    borderStyle: ['responsive', 'hover'],
+    borderWidths: ['responsive', 'hover'],
     cursor: ['responsive'],
     display: ['responsive'],
     flexbox: ['responsive'],

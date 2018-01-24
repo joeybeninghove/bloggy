@@ -1,5 +1,18 @@
 ---
+title: Joey Beninghove
 layout: default
 ---
 
-Joey
+<ul class="list-reset flex flex-col mx-2">
+  {% for post in site.posts %}
+  <li class="flex mb-4">
+    <a href="{{ post.url }}" class="w-5/6 no-underline hover:underline flex flex-col text-grey-darker font-medium">
+      {{ post.title }}
+    </a>
+    <small class="text-grey text-xs w-1/6 flex flex-col items-center ml-2">
+      <div>{{ post.date | date: "%b %d" }}</div>
+      <div>{{ post.date | date: "%Y" }}</div>
+    </small>
+  </li>
+  {% endfor %}
+</ul>

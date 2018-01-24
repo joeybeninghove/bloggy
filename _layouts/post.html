@@ -12,10 +12,19 @@
   <body class="font-sans bg-grey-lightest">
     <div class="flex flex-col">
       <header class="p-4">
-        {% include header.html %}
+        <div class="flex">
+          <a href="/" class="flex items-center no-underline text-grey hover:text-grey-dark">
+            <img src="/assets/joey.jpg" class="rounded-full h-12 w-12 border border-solid mr-2" />
+            <span class="text-lg font-normal">Joey
+              Beninghove</span>
+          </a>
+        </div>
       </header>
       <main class="p-4">
-        {{ content }}
+        <h1 class="font-thin mb-4">{{ page.title }}</h1>
+        <div class="post">
+          {{ content }}
+        </div>
       </main>
       <footer class="p-4 border-t bg-grey-lighter min-h-screen">
         {% include footer.html %}

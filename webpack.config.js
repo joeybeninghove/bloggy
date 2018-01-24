@@ -2,6 +2,7 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
@@ -16,7 +17,7 @@ module.exports = {
       {
         test: /\.css$/,
         include: [
-          path.resolve(__dirname, 'src/assets'),
+          path.resolve(__dirname, 'src/styles'),
         ],
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
@@ -35,9 +36,17 @@ module.exports = {
       filename: '../_layouts/default.html',
       hash: true
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/templates/post.html',
+      filename: '../_layouts/post.html',
+      hash: true
+    }),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'async'
     }),
+    new CopyWebpackPlugin([{
+      from: path.resolve('src/images')
+    }]),
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,

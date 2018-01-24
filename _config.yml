@@ -1,8 +1,6 @@
 permalink: /:title/
 exclude:
   - /src
-  - /layouts
-  - /includes
   - /Gemfile
   - /Gemfile.lock
   - /package.json
@@ -11,3 +9,4 @@ exclude:
   - /tailwind.js
   - /webpack.config.js
   - /postcss.config.js
+  - /README.md

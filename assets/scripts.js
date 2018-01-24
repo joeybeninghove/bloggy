@@ -69,13 +69,26 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_style_css__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__assets_style_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_syntax_css__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_syntax_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__styles_syntax_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_styles_css__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_styles_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_styles_css__);
+
 
 
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
