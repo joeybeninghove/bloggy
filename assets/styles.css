@@ -984,7 +984,19 @@ button,
 
 .post {
   color: #606f7b;
+}
+
+.post p {
   line-height: 1.8;
+}
+
+.post h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
 }
 
 .post p,
@@ -1012,6 +1024,20 @@ button,
 .post h5,
 .post h6 {
   font-weight: 400;
+}
+
+.post .img-bordered {
+  padding-top: .25rem;
+  padding-left: .25rem;
+  padding-right: .25rem;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  margin-right: .5rem;
+}
+
+.post .img-bordered:last-child {
+  margin-right: 0;
 }
 
 div.highlighter-rouge {

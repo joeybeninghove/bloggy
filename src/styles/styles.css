@@ -30,7 +30,15 @@
  */
 
 .post {
-  @apply .text-grey-darker .leading-loose;
+  @apply .text-grey-darker;
+}
+
+.post p {
+  @apply .leading-loose;
+}
+
+.post h1, h2, h3, h4, h5, h6 {
+  @apply .leading-tight;
 }
 
 .post p, .post ul {
@@ -47,6 +55,14 @@
 
 .post h2, .post h3, .post h4, .post h5, .post h6 {
   @apply .font-normal;
+}
+
+.post .img-bordered {
+  @apply .pt-1 .pl-1 .pr-1 .bg-white .border .border-solid .mr-2;
+}
+
+.post .img-bordered:last-child {
+  @apply .mr-0;
 }
 
 div.highlighter-rouge {
