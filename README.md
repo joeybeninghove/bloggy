@@ -5,4 +5,3 @@
 * robots.txt
 * analytics
 * facebook/twitter cards
-* ssl
