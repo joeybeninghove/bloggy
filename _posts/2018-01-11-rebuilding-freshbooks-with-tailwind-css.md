@@ -25,5 +25,5 @@ I didn't extract any components at all, so there is a lot of repitition in the m
 
 ## Preview Pics
 
-![mobile view](http://link.joey.io/Q3QpnN/8OssPqCoUd+)
-![normal view](http://link.joey.io/nHmh6l/lU47sRrfZG+)
+![mobile view](/assets/freshbooks-side-by-side.png)
+![normal view](/assets/freshbooks-full.png)

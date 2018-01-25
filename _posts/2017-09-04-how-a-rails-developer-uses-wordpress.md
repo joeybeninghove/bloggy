@@ -104,7 +104,7 @@ Yes, the view code below is quite nasty, no doubt about that.  But for my purpos
 
 That's it.  Just `rails s`, pop open the browser to `localhost:3000`, copy the markup and paste it into the WordPress page I created for the team page.
 
-<img src="/assets/images/agents-grid-screenshot.png" class="screenshot" />
+<img src="/assets/agents-grid-screenshot.png" class="screenshot" />
 <figcaption class="caption">The end result</figcaption>
 
 ## Happiness
