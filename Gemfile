@@ -2,6 +2,6 @@ source "https://rubygems.org"
 
 gem "jekyll"
 
-#group :jekyll_plugins do
-#  gem "jekyll-feed", "~> 0.6"
-#end
+group :jekyll_plugins do
+  gem "jekyll-compose"
+end
