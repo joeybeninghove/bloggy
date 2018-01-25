@@ -8,7 +8,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  <link href="/assets/styles.css?e28e5bf24742d6028e62" rel="stylesheet"></head>
+  <link href="/assets/styles.css?ab8b81a0da9b69fd99c9" rel="stylesheet"></head>
   <body class="font-sans bg-grey-lightest">
     <div class="flex flex-col">
       <div class="md:flex">
@@ -17,6 +17,7 @@
         </header>
         <main class="p-4 md:w-2/3">
           <h1 class="font-thin mb-4">{{ page.title }}</h1>
+          <small class="text-grey mb-4 block">{{ page.date | date: "%b %d %Y" }}</small>
           <div class="post">
             {{ content }}
           </div>
@@ -26,5 +27,5 @@
         {% include footer.html %}
       </footer>
     </div>
-  <script type="text/javascript" src="/assets/scripts.js?e28e5bf24742d6028e62" async></script></body>
+  <script type="text/javascript" src="/assets/scripts.js?ab8b81a0da9b69fd99c9" async></script></body>
 </html>
