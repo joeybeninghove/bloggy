@@ -14,7 +14,9 @@ _This is mainly for myself so that I can remember what the heck I did to get thi
 
 When messing around with Rails 5.2 Beta 2, I was trying to school myself on [Webpacker](https://github.com/rails/webpacker) and moving away from Sprockets entirely.  Once of the things I noticed when doing this is that some javascript errors started showing up related to the Content Security Policy.  This is talked about in a couple issues, [one in the Rails repo](https://github.com/rails/rails/issues/31309) and [another in the Webpacker repo](https://github.com/rails/webpacker/issues/1057).
 
-    Refused to connect to 'http://localhost:3035/sockjs-node/info?t=1515515117689' because it violates the following Content Security Policy directive: "default-src 'self' https:". Note that 'connect-src' was not explicitly set, so 'default-src' is used as a fallback.
+```
+Refused to connect to 'http://localhost:3035/sockjs-node/info?t=1515515117689' because it violates the following Content Security Policy directive: "default-src 'self' https:". Note that 'connect-src' was not explicitly set, so 'default-src' is used as a fallback.
+```
 
 ![javascript errors](/assets/javascript-errors.png)
 

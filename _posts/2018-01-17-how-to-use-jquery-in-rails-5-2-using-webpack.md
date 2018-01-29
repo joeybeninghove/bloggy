@@ -22,14 +22,15 @@ I had a couple goals in mind:
 It was pretty straightforward, but I couldn't find a single place that had all of the steps involved, so here it is.
 
 ## Add jQuery via Yarn
-
 ```
 yarn add jquery
 ```
 
 ## Update webpack config
-_config/webpack/environment.js_
+Add jQuery to your webpack config, making it available for `$`, `jquery` and
+`jQuery`.
 
+### config/webpack/environment.js
 ```javascript
 const { environment } = require('@rails/webpacker')
 const webpack = require('webpack')
@@ -49,11 +50,9 @@ environment.plugins.prepend(
 The main section to be added is to tell webpack to provide the jQuery plugin to all of the javascript modules using [ProvidePlugin from webpack](https://webpack.js.org/plugins/provide-plugin/).
 
 ## Bask in jQuery glory
-
 Here is a little snippet from my foray into the [Stimulus javascript framework](https://github.com/stimulusjs/stimulus), using jQuery to access one of the elements.
 
-_app/javascript/src/controllers/shippable_controller.js_
-
+### app/javascript/src/controllers/shippable_controller.js
 ```javascript
 import { Controller } from "stimulus"
 

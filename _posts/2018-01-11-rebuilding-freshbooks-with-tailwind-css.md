@@ -11,8 +11,7 @@ author: joeybeninghove
 description: Tailwind Demo using FreshBooks as an example
 ---
 
-## Source Code
-
+## TL;DR
 * [Tailwind Demo Source Code](https://github.com/joeybeninghove/freshbarks-tailwind-demo)
 
 [Tailwind CSS](http://tailwindcss.com) has been blowing me away lately (dad joke) and one of the things I've done to help get up to speed quickly on it was rebuild an existing design (a tip I learned from [Adam Wathan](http://adamwathan.me) in his [rebuilding of Coinbase](https://www.youtube.com/watch?v=7gX_ApBeSpQ&t=3373s)).
@@ -24,6 +23,5 @@ It was a really good experience for me to learn a lot of new things at once, inc
 I didn't extract any components at all, so there is a lot of repitition in the markup, but extracting those out is really straightforward and is definitely something I'd be doing on a real app where this was being used.
 
 ## Preview Pics
-
 ![mobile view](/assets/freshbooks-side-by-side.png)
 ![normal view](/assets/freshbooks-full.png)

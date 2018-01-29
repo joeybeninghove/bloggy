@@ -12,7 +12,6 @@ description: A cool and tiny pub/sub implementation in Ruby
 I recently had a need to do a very simple in-memory notification mechanism in Ruby and came up with a tiny little class which seems to do exactly what I needed.  It's not nearly as fancy or comprehensive as something like [Wisper](https://github.com/krisleech/wisper), but you can't beat the footprint of it.
 
 ## A Simple Notifier
-
 ```ruby
 class Notifier
   attr_reader :events
@@ -37,7 +36,6 @@ end
 ```
 
 ## Usage
-
 So the usage is very straight forward as you might expect.
 
 ```ruby
@@ -53,7 +51,6 @@ notifier.broadcast("clone:succeeded", "http://somesite.com")
 ```
 
 ## Specs (you do write specs, don't you?) :smile:
-
 ```ruby
 describe Notifier do
   describe "#subscribe" do
@@ -109,7 +106,6 @@ end
 ```
 
 ## Singleton Version
-
 I played around with a singleton version of this too, in cases where you didn't want to pass around the instance of the `Notifier` class.  Thankfully, Ruby gives us a [Singleton](http://ruby-doc.org/stdlib-2.4.1/libdoc/singleton/rdoc/Singleton.html) module we can easily include to make this happen.
 
 ```ruby
