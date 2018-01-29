@@ -47,6 +47,10 @@ module.exports = {
     new CopyWebpackPlugin([{
       from: path.resolve('src/images')
     }]),
+    new CopyWebpackPlugin([{
+      from: path.resolve('src/images/favicons/favicon.ico'),
+      to: path.resolve('./')
+    }]),
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
