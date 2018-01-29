@@ -1,14 +1,8 @@
 ---
-layout: post
 title: Rebuilding FreshBooks with Tailwind CSS
+description: Tailwind CSS Demo using FreshBooks as an example
+layout: post
 date: 2018-01-11 18:32 -0500
-tag:
-- tailwind
-- css
-- rails
-category: blog
-author: joeybeninghove
-description: Tailwind Demo using FreshBooks as an example
 ---
 
 ## TL;DR

@@ -1,12 +1,8 @@
 ---
-layout: post
 title: Tiny Pub/Sub In Ruby
+description: A tiny pub/sub implementation in Ruby
+layout: post
 date: 2017-09-13 00:00
-tag:
-- ruby
-category: blog
-author: joeybeninghove
-description: A cool and tiny pub/sub implementation in Ruby
 ---
 
 I recently had a need to do a very simple in-memory notification mechanism in Ruby and came up with a tiny little class which seems to do exactly what I needed.  It's not nearly as fancy or comprehensive as something like [Wisper](https://github.com/krisleech/wisper), but you can't beat the footprint of it.

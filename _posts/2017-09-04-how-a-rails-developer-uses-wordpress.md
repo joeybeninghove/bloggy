@@ -1,5 +1,6 @@
 ---
 title: How A Rails Developer Uses WordPress
+description: Using Rails to quickly generate one-off markup for a WordPress site
 layout: post
 date: 2017-09-04 00:00
 ---

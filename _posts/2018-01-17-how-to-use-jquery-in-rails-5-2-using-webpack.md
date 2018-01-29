@@ -1,15 +1,8 @@
 ---
-layout: post
 title: How To Use jQuery In Rails 5.2 Using Webpack
+description: Configure a Rails 5.2 application to make jQuery available globally using Webpack and Webpacker
+layout: post
 date: 2018-01-17 15:38 -0500
-tag:
-- rails
-- webpack
-- javascript
-category: blog
-author: joeybeninghove
-description: How To Use jQuery In Rails 5.2 Using Webpack
-star: true
 ---
 
 As you may have heard, starting in Rails 5.1, [jQuery is no longer added by default](http://weblog.rubyonrails.org/2017/4/27/Rails-5-1-final/) to new Rails applications.  Since I've just started recently building a new app on Rails 5.2, I encountered the inevitable situation where I wanted to use jQuery for something.  Since I'm already [on the webpack/webpacker bandwagon](/rails-5-2-beta-2-webpacker-actioncable/), I wanted to see how to go about incorporating jQuery into my webpack setup.

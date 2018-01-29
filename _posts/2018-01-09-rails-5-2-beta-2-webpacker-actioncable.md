@@ -1,13 +1,8 @@
 ---
-layout: post
 title: Rails 5.2 Beta 2 + Webpacker + ActionCable
-date: 2018-01-09 11:14 -0500
-tag:
-- ruby
-- rails
-category: blog
-author: joeybeninghove
 description: Fixing an issue with ActionCable while using Webpacker with Rails 5.2 Beta 2
+layout: post
+date: 2018-01-09 11:14 -0500
 ---
 
 _This is mainly for myself so that I can remember what the heck I did to get this working in case I need it for the future._

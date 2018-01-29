@@ -1,6 +1,7 @@
 ---
-layout: post
 title: Throwback To Building & Modding PCs
+description: Just a fun little throwback post about building and modding custom PCs with fans, lights and various other gadgets
+layout: post
 date: 2018-01-25 14:02 -0500
 ---
 

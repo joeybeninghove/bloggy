@@ -1,5 +1,24 @@
+title: Joey Beninghove
+description: Full stack web developer specializing in Rails and Javascript.
 url: https://joey.io
 permalink: /:title/
+author:
+  name: Joey Beninghove
+  twitter: joeybeninghove
+
+twitter:
+  username: joeybeninghove
+
+logo: /assets/joey.jpg
+
+social:
+  name: Joey Beninghove
+  links:
+    - https://twitter.com/joeybeninghove
+    - https://facebook.com/joeybeninghove
+    - https://github.com/joeybeninghove
+    - https://www.linkedin.com/in/joeybeninghove
+
 exclude:
   - /src
   - /Gemfile
