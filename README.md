@@ -4,3 +4,4 @@
 * sitemap
 * robots.txt
 * facebook/twitter cards
+* fix 404s

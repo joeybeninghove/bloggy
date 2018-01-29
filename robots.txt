@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://joey.io/sitemap.xml

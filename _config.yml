@@ -1,3 +1,4 @@
+url: https://joey.io
 permalink: /:title/
 exclude:
   - /src
