@@ -54,7 +54,7 @@ classes that still have the same Tailwind naming flavor.
 
 Since I'm using this in an existing Webpack and PostCSS pipeline in my Rails
 app, this particular script generates CSS in the form of [cssnext](http://cssnext.io/) so that I can
-take advantage of [Acustom properties and var](http://cssnext.io/features/#custom-properties-var).
+take advantage of [custom properties and var](http://cssnext.io/features/#custom-properties-var).
 
 ## Configuration
 
