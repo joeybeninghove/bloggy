@@ -87,7 +87,7 @@ div.highlighter-rouge div.highlight {
 }
 
 code.highlighter-rouge {
-  @apply .bg-grey-light .text-grey-darkest;
+  @apply .bg-grey-light .text-grey-darkest px-1;
 }
 
 /**
