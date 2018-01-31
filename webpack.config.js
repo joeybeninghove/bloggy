@@ -7,6 +7,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
+  devtool: "source-map",
   output: {
     filename: 'scripts.js',
     path: path.resolve(__dirname, 'assets'),
@@ -14,6 +15,13 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: [ /node_modules/ ],
+        use: [
+          { loader: "babel-loader" }
+        ]
+      },
       {
         test: /\.css$/,
         include: [
@@ -39,6 +47,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/templates/post.html',
       filename: '../_layouts/post.html',
+      hash: true
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/templates/abbott-costello-ipsum.html',
+      filename: '../_layouts/abbott-costello-ipsum.html',
       hash: true
     }),
     new ScriptExtHtmlWebpackPlugin({

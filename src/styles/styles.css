@@ -116,3 +116,22 @@ code.highlighter-rouge {
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+.main:after {
+  content: "";
+  background-image: url("/assets/abbott-costello.jpg");
+  z-index: -1;
+  @apply .bg-no-repeat .bg-cover .bg-grey-light .absolute min-h-screen w-full border-b-6 opacity-10;
+}
+
+.antenna-l, .antenna-r {
+  @apply .h-16 .w-4 .bg-grey .rounded-t-lg;
+}
+
+.antenna-l {
+  transform: skew(45deg);
+}
+
+.antenna-r {
+  transform: skew(-45deg);
+}
