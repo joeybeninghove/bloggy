@@ -90,6 +90,10 @@ code.highlighter-rouge {
   @apply .bg-grey-light .text-grey-darkest px-1;
 }
 
+.tldr p {
+  @apply .text-base .mb-2;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
