@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const MinifyPlugin = require("babel-minify-webpack-plugin");
 
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
@@ -19,7 +20,13 @@ module.exports = {
         test: /\.js$/,
         exclude: [ /node_modules/ ],
         use: [
-          { loader: "babel-loader" }
+          {
+            loader: "babel-loader",
+            options: {
+              presets: ["env"],
+              plugins: ["transform-class-properties"]
+            }
+          }
         ]
       },
       {
@@ -30,7 +37,13 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            { loader: 'css-loader', options: { importLoaders: 1 } },
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 1,
+                minimize: true,
+              }
+            },
             'postcss-loader'
           ]
         })
@@ -69,6 +82,7 @@ module.exports = {
       port: 3000,
       proxy: 'http://localhost:4000',
       files: ['_site', '_src']
-    })
+    }),
+    new MinifyPlugin()
   ],
 };
