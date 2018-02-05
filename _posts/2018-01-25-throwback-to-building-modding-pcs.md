@@ -8,15 +8,15 @@ date: 2018-01-25 14:02 -0500
 Seeing Paul Stamatiou's epic blog post about him [building a custom PC](https://paulstamatiou.com/building-a-windows-10-lightroom-photo-editing-pc/) brought back my own memories from 15 years ago doing the same thing.  So I dug up some old (admittedly crappy) photos of those old times.
 
 ## A few months before I was doing this...
-<img src="/assets/wedding.jpg" class="w-64 img-bordered">
+<img src="/assets/wedding.jpg" class="w-64 bordered-image">
 
 ## I was doing this...
 <div class="flex">
   <div class="w-1/2 mr-2">
-    <img src="/assets/case-mod-switches-build.jpg">
+    <img src="/assets/case-mod-switches-build.jpg" class="bordered-image">
   </div>
   <div class="w-1/2">
-    <img src="/assets/case-mod-switches.jpg">
+    <img src="/assets/case-mod-switches.jpg" class="bordered-image">
   </div>
 </div>
 
@@ -28,22 +28,22 @@ Seeing Paul Stamatiou's epic blog post about him [building a custom PC](https://
 
 <div class="flex mb-2">
   <div class="w-1/2 mr-2">
-    <img src="/assets/case-mod-switches-close.jpg">
+    <img src="/assets/case-mod-switches-close.jpg" class="bordered-image">
   </div>
   <div class="w-1/2">
-    <img src="/assets/case-mod-fan.jpg">
+    <img src="/assets/case-mod-fan.jpg" class="bordered-image">
   </div>
 </div>
 
 <div class="flex mb-4">
   <div class="w-1/3 mr-2">
-    <img src="/assets/case-mod-window-neon.jpg">
+    <img src="/assets/case-mod-window-neon.jpg" class="bordered-image">
   </div>
   <div class="w-1/3 mr-2">
-    <img src="/assets/case-mod-window-neon-dark.jpg">
+    <img src="/assets/case-mod-window-neon-dark.jpg" class="bordered-image">
   </div>
   <div class="w-1/3">
-    <img src="/assets/case-mod-curved-window.jpg">
+    <img src="/assets/case-mod-curved-window.jpg" class="bordered-image">
   </div>
 </div>
 

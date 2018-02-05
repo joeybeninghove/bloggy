@@ -97,7 +97,7 @@ Yes, the view code below is quite nasty, no doubt about that.  But for my purpos
 
 That's it.  Just `rails s`, pop open the browser to `localhost:3000`, copy the markup and paste it into the WordPress page I created for the team page.
 
-![agents](/assets/agents-grid-screenshot.jpg)
+<img src="/assets/agents-grid-screenshot.jpg" class="bordered-image">
 The end result
 
 ## Happiness

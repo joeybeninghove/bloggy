@@ -13,7 +13,7 @@ When messing around with Rails 5.2 Beta 2, I was trying to school myself on [Web
 Refused to connect to 'http://localhost:3035/sockjs-node/info?t=1515515117689' because it violates the following Content Security Policy directive: "default-src 'self' https:". Note that 'connect-src' was not explicitly set, so 'default-src' is used as a fallback.
 ```
 
-![javascript errors](/assets/javascript-errors.png)
+<img src="/assets/javascript-errors.png" class="bordered-image">
 
 The thing to do to fix this is to update `config/initializers/content_security_policy.rb` and add a `connect_src` configuration like so:
 

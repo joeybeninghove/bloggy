@@ -29,37 +29,28 @@
  * @import "components/forms";
  */
 
-.post {
-  @apply .text-grey-darkest;
-}
-
-.post a {
+a {
   @apply .text-orange-dark;
 }
 
-.post a:hover {
+a:hover {
   @apply .text-orange;
 }
 
-
-.post h2, .post h3, .post h4, .post h5, .post h6 {
+h2, h3, h4, h5, h6 {
   @apply .leading-tight .mb-1 .font-medium;
 }
 
-.post p {
+p {
   @apply .mb-6;
 }
 
-.post ul {
+ul {
   @apply .mb-4;
 }
 
-.post li {
+li {
   @apply .mb-2;
-}
-
-.post img {
-  @apply .pt-1 .pl-1 .pr-1 .bg-white .border .border-solid .mr-2;
 }
 
 .post iframe {
@@ -138,4 +129,8 @@ code.highlighter-rouge {
 
 .antenna-r {
   transform: skew(-45deg);
+}
+
+.bordered-image {
+  @apply .pt-1 .pl-1 .pr-1 .bg-white .border .border-solid .mr-2;
 }
