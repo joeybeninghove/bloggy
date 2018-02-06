@@ -1,7 +1,7 @@
 ---
+layout: post
 title: How To Use jQuery In Rails 5.2 Using Webpack
 description: Configure a Rails 5.2 application to make jQuery available globally using Webpack and Webpacker
-layout: post
 date: 2018-01-17 15:38 -0500
 ---
 

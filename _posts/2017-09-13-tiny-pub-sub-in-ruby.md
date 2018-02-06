@@ -1,7 +1,7 @@
 ---
+layout: post
 title: Tiny Pub/Sub In Ruby
 description: A tiny pub/sub implementation in Ruby
-layout: post
 date: 2017-09-13 00:00
 ---
 
@@ -46,7 +46,7 @@ notifier.broadcast("clone:succeeded", "http://somesite.com")
 # => http://somesite.com
 ```
 
-## Specs (you do write specs, don't you?) :smile:
+## Specs (you do write specs, don't you?)
 ```ruby
 describe Notifier do
   describe "#subscribe" do

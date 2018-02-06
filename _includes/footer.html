@@ -1,8 +1,30 @@
-<div class="flex flex-col items-center justify-center mx-2 text-grey-light">
-  <h6 class="text-xs mb-1">Other things</h6>
-  <p class="text-xs">
-    farming, woodworking, speedcubing, disc golf, board games
-  </p>
-</div>
+<footer class="flex flex-col items-center bg-orange-lightest pin-b pin-x border-t-4 border-orange pt-4 text-sm text-grey-dark">
+  <ul class="flex list-reset mb-2">
+    <li class="mr-4"><a href="https://twitter.com/joeybeninghove" class="no-underline text-orange-dark hover:text-orange font-black">Twitter</a></li>
+    <li class="mr-4"><a href="https://github.com/joeybeninghove" class="no-underline text-orange-dark hover:text-orange font-black">GitHub</a></li>
+    <li><a href="mailto:me@joey.io" class="no-underline text-orange-dark hover:text-orange font-black">Email</a></li>
+  </ul>
 
-{% include analytics.html %}
+  <div class="flex items-center mb-8">
+    <a href="https://tailwindcss.com" title="Tailwind CSS">
+      <svg class="fill-current w-12 h-12" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 11.1C15.3 3.9 19.8.3 27 .3c10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 27.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" transform="translate(5 16)" fill="url(#logoGradient)" fill-rule="evenodd"></path></svg>
+    </a>
+    <a href="https://jekyllrb.com" title="Jekyll">
+      <img src="/assets/jekyll-logo-light-transparent-small.png" class="w-32">
+    </a>
+  </div>
+
+  <svg style="height: 0; width: 0; position: absolute; visibility: hidden;">
+    <defs>
+    <linearGradient x1="0%" y1="0%" y2="100%" id="logoGradient">
+    <stop stop-color="#2383AE" offset="0%"></stop>
+    <stop stop-color="#6DD7B9" offset="100%"></stop>
+    </linearGradient>
+    </defs>
+  </svg>
+
+  <h6 class="text-xs font-normal mb-2">Other Fun Things</h6>
+  <a href="/abbott-costello-ipsum" class="no-underline text-orange-dark hover:text-orange text-xs">Abbott & Costello Ipsum</a> 
+
+  {% include analytics.html %}
+</footer>

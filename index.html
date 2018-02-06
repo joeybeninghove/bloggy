@@ -1,18 +1,18 @@
 ---
-title: Joey Beninghove
 layout: default
+title: Joey Beninghove
 ---
 
-<h2 class="font-black mb-8 text-4xl">Posts</h2>
+<h2 class="mb-4 text-4xl text-center sm:text-left font-semibold">Posts</h2>
 
 <ul class="list-reset flex flex-col">
   {% for post in site.posts %}
-  <li class="flex items-center mb-4">
-    <a href="{{ post.url }}" class="w-5/6 md:w-auto text-sm md:text-base lg:text-lg no-underline hover:underline flex flex-col text-grey-darker font-medium">
+  <li class="flex items-center mb-2 group">
+    <a href="{{ post.url }}" class="w-5/6 md:w-auto text-sm md:text-base lg:text-lg no-underline text-grey-darker group-hover:text-orange font-medium">
       {{ post.title }}
     </a>
-    <hr class="hidden md:block flex-1 border ml-4 mr-2" />
-    <small class="w-1/6 md:w-auto text-grey text-xs flex flex-col items-center ml-2">
+    <hr class="hidden md:block flex-1 border ml-4 mr-2 group-hover:border-orange" />
+    <small class="w-1/6 md:w-auto text-grey text-xs flex flex-col items-center ml-2 leading-tight group-hover:text-orange">
       <div>{{ post.date | date: "%b %d" }}</div>
       <div>{{ post.date | date: "%Y" }}</div>
     </small>

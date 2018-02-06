@@ -53,18 +53,8 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
-      template: 'src/templates/default.html',
-      filename: '../_layouts/default.html',
-      hash: true
-    }),
-    new HtmlWebpackPlugin({
-      template: 'src/templates/post.html',
-      filename: '../_layouts/post.html',
-      hash: true
-    }),
-    new HtmlWebpackPlugin({
-      template: 'src/templates/abbott-costello-ipsum.html',
-      filename: '../_layouts/abbott-costello-ipsum.html',
+      template: 'src/templates/base.html',
+      filename: '../_layouts/base.html',
       hash: true
     }),
     new ScriptExtHtmlWebpackPlugin({

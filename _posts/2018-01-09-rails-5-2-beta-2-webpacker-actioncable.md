@@ -1,7 +1,7 @@
 ---
+layout: post
 title: Rails 5.2 Beta 2 + Webpacker + ActionCable
 description: Fixing an issue with ActionCable while using Webpacker with Rails 5.2 Beta 2
-layout: post
 date: 2018-01-09 11:14 -0500
 ---
 

@@ -1,7 +1,7 @@
 ---
+layout: post
 title: Ecommerce Modeling Exercise - Product Variants
 description: Ecommerce modeling exercice to find a product variant from selected option values
-layout: post
 date: 2018-02-02 11:17 -0500
 ---
 

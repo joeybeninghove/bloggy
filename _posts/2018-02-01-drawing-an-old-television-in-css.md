@@ -1,7 +1,7 @@
 ---
+layout: post
 title: Drawing An Old Television in CSS
 description: Using some simple CSS tricks to draw an old school television set
-layout: post
 date: 2018-02-01 10:56 -0500
 ---
 
@@ -9,7 +9,7 @@ When I was looking for an old television icon to use for the
 [Abbott & Costello Ipsum](/abbott-costello-ipsum) thing I made the other day, I
 realized I could probably just do it using CSS alone.  Turns out I was right.
 
-<div class="flex">
+<div class="flex mb-6">
   <div class="flex flex-col items-center">
     <div class="flex w-32 justify-between">
       <div class="antenna-l border border-grey-dark border-b-0"></div>
@@ -57,7 +57,7 @@ little custom CSS for handling the skewing of the antennas.
 ```css
 .antenna-l, .antenna-r {
   /* @apply call is from Tailwind */
-  @apply .h-16 .w-4 .bg-grey .rounded-t-lg;
+  @apply h-16 w-4 bg-grey rounded-t-lg;
 }
 
 .antenna-l {
