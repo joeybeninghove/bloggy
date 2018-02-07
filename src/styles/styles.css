@@ -34,7 +34,7 @@
 }
 
 .post h2, .post h3 {
-  @apply font-medium mb-6;
+  @apply font-medium mb-6 break-words;
 }
 
 .post .highlighter-rouge .highlight {
@@ -50,7 +50,7 @@
 }
 
 .post code.highlighter-rouge {
-  @apply bg-grey-light font-mono px-1;
+  @apply bg-grey-light font-mono px-1 break-words;
 }
 
 .post iframe {
