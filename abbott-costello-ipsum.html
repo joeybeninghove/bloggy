@@ -1,64 +1,112 @@
 ---
+layout: base
 title: Abbott & Costello Ipsum Generator
 description: Because we all know Abbott & Costello rocks, here is an ipsum generator using their Who's On First? skit, built using Jekyll, Tailwind CSS and Stimulus JS.
-layout: abbott-costello-ipsum
 date: 2018-01-31 11:14 -0500
 ---
 
-<div class="flex flex-col items-center" data-controller="abbott-costello-ipsum">
-  <div class="flex w-32 justify-between">
-    <div class="antenna-l"></div>
-    <div class="antenna-r"></div>
-  </div>
-  <div class="flex p-4 border-6 rounded-lg border-grey bg-grey w-96 h-64 mb-4">
-    <textarea class="w-full h-full p-2 border rounded-lg mr-6" data-target="abbott-costello-ipsum.text" readonly>Well Costello, I’m going to New York with you. You know Bookie Harris, the Yankee’s manager, gave me a job as coach for as long as you’re on the team.  Look, Abbott, if you’re the coach, you must know all the players.  I certainly do.  Well you know I’ve never met the guys. So you’ll have to tell me their names, and then I’ll know who’s playing on the team.</textarea>
-    <div class="flex flex-col justify-around text-grey-dark">
-      <div class="h-12 w-12 rounded-full bg-white flex justify-center items-center">
-        <a href="javascript:void(0)"
-          class="h-6 w-6 text-grey-dark hover:text-grey"
-          data-action="abbott-costello-ipsum#generate"
-          title="Generate Ipsum">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current"><path d="M10 3v2a5 5 0 0 0-3.54 8.54l-1.41 1.41A7 7 0 0 1 10 3zm4.95 2.05A7 7 0 0 1 10 17v-2a5 5 0 0 0 3.54-8.54l1.41-1.41zM10 20l-4-4 4-4v8zm0-12V0l4 4-4 4z"/></svg>
-        </a>
-      </div>
-      <div class="h-12 w-12 rounded-full bg-white flex justify-center items-center">
-        <a href="javascript:void(0)"
-          class="h-6 w-6 text-grey-dark hover:text-grey"
-          data-action="abbott-costello-ipsum#copy"
-          title="Copy To Clipboard">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current h-6 w-6"><path d="M7.03 2.6a3 3 0 0 1 5.94 0L15 3v1h1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h1V3l2.03-.4zM5 6H4v12h12V6h-1v1H5V6zm5-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
-        </a>
+<body class="font-sans bg-black">
+  <div class="main flex flex-col min-h-screen z-10">
+    <div class="pt-16 mb-8">
+      <h1 class="font-black text-white text-center text-5xl mb-8">Abbott & Costello Ipsum</h1>
+      <div class="flex flex-col items-center" data-controller="abbott-costello-ipsum">
+        <div class="flex w-32 justify-between">
+          <div class="antenna-l"></div>
+          <div class="antenna-r"></div>
+        </div>
+        <div class="flex p-4 border-6 rounded-lg border-grey bg-grey w-96 h-64 mb-4">
+          <textarea class="w-full h-full p-2 border rounded-lg mr-6" data-target="abbott-costello-ipsum.text" readonly>Well Costello, I’m going to New York with you. You know Bookie Harris, the Yankee’s manager, gave me a job as coach for as long as you’re on the team.  Look, Abbott, if you’re the coach, you must know all the players.  I certainly do.  Well you know I’ve never met the guys. So you’ll have to tell me their names, and then I’ll know who’s playing on the team.</textarea>
+          <div class="flex flex-col justify-around text-grey-dark">
+            <div class="h-12 w-12 rounded-full bg-white flex justify-center items-center">
+              <a href="javascript:void(0)"
+                 class="h-6 w-6 text-grey-dark hover:text-grey"
+                 data-action="abbott-costello-ipsum#generate"
+                 title="Generate Ipsum">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current"><path d="M10 3v2a5 5 0 0 0-3.54 8.54l-1.41 1.41A7 7 0 0 1 10 3zm4.95 2.05A7 7 0 0 1 10 17v-2a5 5 0 0 0 3.54-8.54l1.41-1.41zM10 20l-4-4 4-4v8zm0-12V0l4 4-4 4z"/></svg>
+              </a>
+            </div>
+            <div class="h-12 w-12 rounded-full bg-white flex justify-center items-center">
+              <a href="javascript:void(0)"
+                 class="h-6 w-6 text-grey-dark hover:text-grey"
+                 data-action="abbott-costello-ipsum#copy"
+                 title="Copy To Clipboard">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current h-6 w-6"><path d="M7.03 2.6a3 3 0 0 1 5.94 0L15 3v1h1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h1V3l2.03-.4zM5 6H4v12h12V6h-1v1H5V6zm5-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden text-white font-black" data-target="abbott-costello-ipsum.notification">
+          copied
+        </div>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum1">Well Costello, I’m going to New York with you. You know Bookie Harris, the Yankee’s manager, gave me a job as coach for as long as you’re on the team.  Look, Abbott, if you’re the coach, you must know all the players.  I certainly do.  Well you know I’ve never met the guys. So you’ll have to tell me their names, and then I’ll know who’s playing on the team.</script>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum2">Oh, I’ll tell you their names, but you know it seems to me they give these ball players now-a-days very peculiar names.  You mean funny names?  Strange names, pet names … like Dizzy Dean… His brother Daffy.  Daffy Dean… And their French cousin.  French?  Goofé.  Goofé Dean. Dean. Well, let’s see, we have on the bags, Who’s on first, What’s on second, I Don’t Know is on third… That’s what I want to find out.</script>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum3">I say Who’s on first, What’s on second, I Don’t Know’s on third.  Are you the manager?  Yes.  You gonna be the coach too?  Yes.  And you don’t know the fellows’ names?  Well I should.  Well then who’s on first?  Yes.  I mean the fellow’s name.  Who.  The guy on first.  Who.  The first baseman.  Who.  The guy playing… Who is on first!  I’m asking YOU who’s on first.</script>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum4">That’s the man’s name.  That’s who’s name?  Yes.  Well go ahead and tell me.  That’s it.  That’s who?  Yes.  PAUSE Look, you gotta first baseman?  Certainly.  Who’s playing first?  That’s right.  When you pay off the first baseman every month, who gets the money?  Every dollar of it.  All I’m trying to find out is the fellow’s name on first base.  Who.  The guy that gets… That’s it.  Who gets the money… He does, every dollar. Sometimes his wife comes down and collects it.</script>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum5">Who’s wife?  Yes.  PAUSE What’s wrong with that?  Look, all I wanna know is when you sign up the first baseman, how does he sign his name?  Who.  The guy.  Who.  How does he sign… That’s how he signs it.  Who?  Yes.  PAUSE All I’m trying to find out is what’s the guy’s name on first base.  No. What is on second base.  I’m not asking you who’s on second.  Who’s on first.  One base at a time!</script>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum6">Well, don’t change the players around.  I’m not changing nobody!  Take it easy, buddy.  I’m only asking you, who’s the guy on first base?  That’s right.  Ok.  All right.  PAUSE What’s the guy’s name on first base?  No. What is on second.  I’m not asking you who’s on second.  Who’s on first.  I don’t know.  He’s on third, we’re not talking about him.  Now how did I get on third base?  Why you mentioned his name.  If I mentioned the third baseman’s name, who did I say is playing third?</script>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum7">No. Who’s playing first.  What’s on base?  What’s on second.  I don’t know.  He’s on third.  There I go, back on third again!  PAUSE Would you just stay on third base and don’t go off it.  All right, what do you want to know?  Now who’s playing third base?  Why do you insist on putting Who on third base?  What am I putting on third.  No. What is on second.  You don’t want who on second?  Who is on first.  I don’t know.  Abbott & Costello Together:Third base!  PAUSE Look, you gotta outfield?  Sure.  The left fielder’s name?  Why.  I just thought I’d ask you.  Well, I just thought I’d tell ya.  Then tell me who’s playing left field.</script>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum8">Who’s playing first.  I’m not… stay out of the infield! I want to know what’s the guy’s name in left field?  No, What is on second.  I’m not asking you who’s on second.  Who’s on first!  I don’t know.  Abbott & Costello Together: Third base!  PAUSE The left fielder’s name?  Why.  Because!  Oh, he’s centerfield.  PAUSE Look, You gotta pitcher on this team?  Sure.  The pitcher’s name?  Tomorrow.</script>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum9">You don’t want to tell me today?  I’m telling you now.  Then go ahead.  Tomorrow!  What time?  What time what?  What time tomorrow are you gonna tell me who’s pitching?  Now listen. Who is not pitching.  I’ll break your arm, you say who’s on first! I want to know what’s the pitcher’s name?  What’s on second.  I don’t know.  Abbott & Costello Together: Third base!  PAUSE Gotta a catcher?  Certainly.</script>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum10">The catcher’s name?  Today.  Today, and tomorrow’s pitching.  Now you’ve got it.  All we got is a couple of days on the team.  PAUSE You know I’m a catcher too.  So they tell me.  I get behind the plate to do some fancy catching, Tomorrow’s pitching on my team and a heavy hitter gets up. Now the heavy hitter bunts the ball. When he bunts the ball, me, being a good catcher, I’m gonna throw the guy out at first base. So I pick up the ball and throw it to who?</script>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum11">Now that’s the first thing you’ve said right.  I don’t even know what I’m talking about!  PAUSE That’s all you have to do.  Is to throw the ball to first base.  Yes!  Now who’s got it?  Naturally.  PAUSE Look, if I throw the ball to first base, somebody’s gotta get it. Now who has it?  Naturally.  Who?  Naturally.  Naturally?  Naturally.  So I pick up the ball and I throw it to Naturally.</script>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum12">No you don’t, you throw the ball to Who.  Naturally.  That’s different.  That’s what I said.  You’re not saying it… I throw the ball to Naturally.  You throw it to Who.  Naturally.  That’s it.  That’s what I said!  You ask me.  I throw the ball to who?  Naturally.  Now you ask me.  You throw the ball to Who?  Naturally.  That’s it.</script>
+
+        <script type="text/example" data-target="abbott-costello-ipsum.ipsum13">Same as you! Same as YOU! I throw the ball to who. Whoever it is drops the ball and the guy runs to second. Who picks up the ball and throws it to What. What throws it to I Don’t Know. I Don’t Know throws it back to Tomorrow, Triple play. Another guy gets up and hits a long fly ball to Because. Why? I don’t know! He’s on third and I don’t give a darn!  What?  I said I don’t give a darn!  Oh, that’s our shortstop.</script>
+
       </div>
     </div>
+    <footer class="flex flex-col items-center">
+      <div class="text-4xl font-thin mb-4 text-grey">Powered by</div>
+      <div class="flex items-center mb-16">
+        <a href="https://jekyllrb.com" title="Jekyll">
+          <img src="/assets/jekyll.png" class="inline-block w-32" />
+        </a>
+        <a href="https://tailwindcss.com" title="Tailwind CSS">
+          <svg class="fill-current w-12 h-12 mr-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 11.1C15.3 3.9 19.8.3 27 .3c10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 27.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" transform="translate(5 16)" fill="url(#logoGradient)" fill-rule="evenodd"></path></svg>
+        </a>
+        <a href="https://stimulusjs.org" title="Stimulus" class="mr-6">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 340 340"
+                                                                                     xml:space="preserve" class="fill-current h-12 w-12" style="color: #dac6a4">
+            <path d="M292.4,190.4h-22.2c-5.5,0-13.9,2.3-18.6,5.1L98.8,285.4c-4.7,2.8-13.1,5.1-18.6,5.1H48H10.2h-10v40c0,5.5,4.5,10,10,10
+            h320c5.5,0,10-4.5,10-10v-40h-10h-37.8h-32.2c-5.5,0-13.9-2.3-18.6-5.1l-45.8-26.9c-4.7-2.8-4.7-7.4,0-10.1l21.8-12.8
+            c4.7-2.8,12.5-2.8,17.2,0l16.8,9.9c4.7,2.8,13.1,5.1,18.6,5.1h22.2h37.8h10v-60h-10H292.4z"/>
+            <path d="M292.4,90.4h-22.2c-5.5,0-13.9,2.3-18.6,5.1L98.8,185.4c-4.7,2.8-13.1,5.1-18.6,5.1H48H10.2h-10v60h10H48h22.2
+            c5.5,0,13.9-2.3,18.6-5.1l152.8-89.9c4.7-2.8,13.1-5.1,18.6-5.1h32.2h37.8h10v-60h-10H292.4z"/>
+            <path d="M330.2,0.4h-320c-5.5,0-10,4.5-10,10v40h10H48h32.2c5.5,0,13.9,2.3,18.6,5.1l45.8,26.9c4.7,2.8,4.7,7.4,0,10.1l-21.8,12.8
+            c-4.7,2.8-12.5,2.8-17.2,0l-16.8-9.9c-4.7-2.8-13.1-5.1-18.6-5.1H48H10.2h-10v60h10H48h22.2c5.5,0,13.9-2.3,18.6-5.1l152.8-89.9
+            c4.7-2.8,13.1-5.1,18.6-5.1h32.2h37.8h10v-40C340.2,4.9,335.7,0.4,330.2,0.4z"/>
+          </svg>
+        </a>
+        <a href="/">
+          <img src="/assets/joey.jpg" class="rounded-full h-16 w-16" />
+        </a>
+      </div>
+
+    </footer>
   </div>
-  <div class="hidden text-white font-black" data-target="abbott-costello-ipsum.notification">
-    copied
-  </div>
 
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum1">Well Costello, I’m going to New York with you. You know Bookie Harris, the Yankee’s manager, gave me a job as coach for as long as you’re on the team.  Look, Abbott, if you’re the coach, you must know all the players.  I certainly do.  Well you know I’ve never met the guys. So you’ll have to tell me their names, and then I’ll know who’s playing on the team.</script>
+  <svg style="height: 0; width: 0; position: absolute; visibility: hidden;">
+    <defs>
+    <linearGradient x1="0%" y1="0%" y2="100%" id="logoGradient">
+    <stop stop-color="#2383AE" offset="0%"></stop>
+    <stop stop-color="#6DD7B9" offset="100%"></stop>
+    </linearGradient>
+    </defs>
+  </svg>
 
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum2">Oh, I’ll tell you their names, but you know it seems to me they give these ball players now-a-days very peculiar names.  You mean funny names?  Strange names, pet names … like Dizzy Dean… His brother Daffy.  Daffy Dean… And their French cousin.  French?  Goofé.  Goofé Dean. Dean. Well, let’s see, we have on the bags, Who’s on first, What’s on second, I Don’t Know is on third… That’s what I want to find out.</script>
+  {% include analytics.html %}
+</body>
 
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum3">I say Who’s on first, What’s on second, I Don’t Know’s on third.  Are you the manager?  Yes.  You gonna be the coach too?  Yes.  And you don’t know the fellows’ names?  Well I should.  Well then who’s on first?  Yes.  I mean the fellow’s name.  Who.  The guy on first.  Who.  The first baseman.  Who.  The guy playing… Who is on first!  I’m asking YOU who’s on first.</script>
-
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum4">That’s the man’s name.  That’s who’s name?  Yes.  Well go ahead and tell me.  That’s it.  That’s who?  Yes.  PAUSE Look, you gotta first baseman?  Certainly.  Who’s playing first?  That’s right.  When you pay off the first baseman every month, who gets the money?  Every dollar of it.  All I’m trying to find out is the fellow’s name on first base.  Who.  The guy that gets… That’s it.  Who gets the money… He does, every dollar. Sometimes his wife comes down and collects it.</script>
-
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum5">Who’s wife?  Yes.  PAUSE What’s wrong with that?  Look, all I wanna know is when you sign up the first baseman, how does he sign his name?  Who.  The guy.  Who.  How does he sign… That’s how he signs it.  Who?  Yes.  PAUSE All I’m trying to find out is what’s the guy’s name on first base.  No. What is on second base.  I’m not asking you who’s on second.  Who’s on first.  One base at a time!</script>
-
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum6">Well, don’t change the players around.  I’m not changing nobody!  Take it easy, buddy.  I’m only asking you, who’s the guy on first base?  That’s right.  Ok.  All right.  PAUSE What’s the guy’s name on first base?  No. What is on second.  I’m not asking you who’s on second.  Who’s on first.  I don’t know.  He’s on third, we’re not talking about him.  Now how did I get on third base?  Why you mentioned his name.  If I mentioned the third baseman’s name, who did I say is playing third?</script>
-
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum7">No. Who’s playing first.  What’s on base?  What’s on second.  I don’t know.  He’s on third.  There I go, back on third again!  PAUSE Would you just stay on third base and don’t go off it.  All right, what do you want to know?  Now who’s playing third base?  Why do you insist on putting Who on third base?  What am I putting on third.  No. What is on second.  You don’t want who on second?  Who is on first.  I don’t know.  Abbott & Costello Together:Third base!  PAUSE Look, you gotta outfield?  Sure.  The left fielder’s name?  Why.  I just thought I’d ask you.  Well, I just thought I’d tell ya.  Then tell me who’s playing left field.</script>
-
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum8">Who’s playing first.  I’m not… stay out of the infield! I want to know what’s the guy’s name in left field?  No, What is on second.  I’m not asking you who’s on second.  Who’s on first!  I don’t know.  Abbott & Costello Together: Third base!  PAUSE The left fielder’s name?  Why.  Because!  Oh, he’s centerfield.  PAUSE Look, You gotta pitcher on this team?  Sure.  The pitcher’s name?  Tomorrow.</script>
-
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum9">You don’t want to tell me today?  I’m telling you now.  Then go ahead.  Tomorrow!  What time?  What time what?  What time tomorrow are you gonna tell me who’s pitching?  Now listen. Who is not pitching.  I’ll break your arm, you say who’s on first! I want to know what’s the pitcher’s name?  What’s on second.  I don’t know.  Abbott & Costello Together: Third base!  PAUSE Gotta a catcher?  Certainly.</script>
-
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum10">The catcher’s name?  Today.  Today, and tomorrow’s pitching.  Now you’ve got it.  All we got is a couple of days on the team.  PAUSE You know I’m a catcher too.  So they tell me.  I get behind the plate to do some fancy catching, Tomorrow’s pitching on my team and a heavy hitter gets up. Now the heavy hitter bunts the ball. When he bunts the ball, me, being a good catcher, I’m gonna throw the guy out at first base. So I pick up the ball and throw it to who?</script>
-
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum11">Now that’s the first thing you’ve said right.  I don’t even know what I’m talking about!  PAUSE That’s all you have to do.  Is to throw the ball to first base.  Yes!  Now who’s got it?  Naturally.  PAUSE Look, if I throw the ball to first base, somebody’s gotta get it. Now who has it?  Naturally.  Who?  Naturally.  Naturally?  Naturally.  So I pick up the ball and I throw it to Naturally.</script>
-
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum12">No you don’t, you throw the ball to Who.  Naturally.  That’s different.  That’s what I said.  You’re not saying it… I throw the ball to Naturally.  You throw it to Who.  Naturally.  That’s it.  That’s what I said!  You ask me.  I throw the ball to who?  Naturally.  Now you ask me.  You throw the ball to Who?  Naturally.  That’s it.</script>
-
-  <script type="text/example" data-target="abbott-costello-ipsum.ipsum13">Same as you! Same as YOU! I throw the ball to who. Whoever it is drops the ball and the guy runs to second. Who picks up the ball and throws it to What. What throws it to I Don’t Know. I Don’t Know throws it back to Tomorrow, Triple play. Another guy gets up and hits a long fly ball to Because. Why? I don’t know! He’s on third and I don’t give a darn!  What?  I said I don’t give a darn!  Oh, that’s our shortstop.</script>
-
-</div>

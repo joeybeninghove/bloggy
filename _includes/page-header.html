@@ -1,5 +1,10 @@
-<div class="flex justify-center">
-  {% include header-large.html %}
+<div class="flex md:hidden">
+  <a href="/" class="flex items-center no-underline text-orange-dark hover:text-orange mr-2">
+    <img src="/assets/joey.jpg" class="rounded-full h-12 w-12 border border-solid mr-2" />
+  </a>
+  {% include top-menu.html %}
 </div>
 
-<hr class="h-px w-full bg-orange mt-8 sm:hidden">
+<div class="hidden md:flex justify-center">
+  {% include header.html %}
+</div>
