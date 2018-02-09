@@ -64,6 +64,9 @@ module.exports = {
       from: path.resolve('src/images')
     }]),
     new CopyWebpackPlugin([{
+      from: path.resolve('src/downloads')
+    }]),
+    new CopyWebpackPlugin([{
       from: path.resolve('src/images/favicons/favicon.ico'),
       to: path.resolve('./')
     }]),

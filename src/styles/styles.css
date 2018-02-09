@@ -29,12 +29,16 @@
  * @import "components/forms";
  */
 
-.post p, .post h2, .post .highlighter-rouge, .post ul {
+.post p, .post h2, .post h3, .post h4, .post h5, .post h6, .post .highlighter-rouge, .post ul, .post ol {
   @apply mb-6;
 }
 
-.post h2, .post h3 {
+.post h2, .post h3, .post h4, .post h5, .post h6 {
   @apply font-medium mb-6 break-words;
+}
+
+.post h6 {
+  @apply text-base;
 }
 
 .post .highlighter-rouge .highlight {
@@ -79,6 +83,8 @@
 .antenna-r {
   transform: skew(-45deg);
 }
+
+@import "responsive-video.css";
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
