@@ -1,6 +1,11 @@
 ---
 layout: post
 title: 'Yesterday #1 - CSS Outline, Ruby iTunes Feeds & Brave Vim'
+description:
+  Remote SSH Commands, Gauges WordPress Plugin, CSS Outline, User Agent Strings,
+  Easily Transfer Files, Ruby iTunes Feed, Material Colors in Tailwind CSS,
+  Carbon Vim Plugin, Multiple Heroku Accounts, Brave Browser With Vim,
+  IRB Command History, Import CSV Data Into PostgreSQL and Robots!!
 date: 2018-02-15 11:29 -0500
 ---
 
