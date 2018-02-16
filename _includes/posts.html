@@ -3,7 +3,7 @@
     {% assign currentdate = post.date | date: "%Y" %}
     {% if currentdate != date %}
       {% unless forloop.first %}</ul>{% endunless %}
-      <h3 id="y{{post.date | date: "%Y"}}" class="font-medium mb-4">{{ currentdate }}</h3>
+      <h3 id="y{{post.date | date: "%Y"}}" class="font-medium mb-4 text-lg">{{ currentdate }}</h3>
       <ul class="list-reset flex flex-col mb-4">
       {% assign date = currentdate %}
     {% endif %}

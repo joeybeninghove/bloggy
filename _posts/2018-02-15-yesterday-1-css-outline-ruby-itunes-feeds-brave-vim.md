@@ -8,7 +8,6 @@ description:
   IRB Command History, Import CSV Data Into PostgreSQL and Robots!!
 date: 2018-02-15 11:29 -0500
 featured: true
-excerpt_separator: <!--more-->
 ---
 
 ## Have you ever had one of those _serendipitous moments_ when ...
