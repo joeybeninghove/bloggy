@@ -7,6 +7,8 @@ description:
   Carbon Vim Plugin, Multiple Heroku Accounts, Brave Browser With Vim,
   IRB Command History, Import CSV Data Into PostgreSQL and Robots!!
 date: 2018-02-15 11:29 -0500
+featured: true
+excerpt_separator: <!--more-->
 ---
 
 ## Have you ever had one of those _serendipitous moments_ when ...
@@ -17,6 +19,8 @@ date: 2018-02-15 11:29 -0500
 
 This happens to me from time to time and it's a great feeling.  I was thinking
 this might happen to other folks as well.
+
+<!--more-->
 
 So I had this crazy idea about literally looking at my browser history from
 <mark>yesterday</mark>, pulling out the interesting

@@ -12,7 +12,24 @@ layout: base
       <hr class="w-full h-px bg-orange sm:hidden">
 
       <main class="p-4 md:w-2/3">
-        <h2 class="mb-4 text-4xl font-semibold">Posts</h2>
+        {% for post in site.posts %}
+          {% if post.featured == true %}
+            <h1 class="mb-2 text-4xl font-semibold leading-tight">
+              <a href="{{ post.url }}" class="no-underline text-grey-darkest">
+                {{ post.title }}
+              </a>
+            </h1>
+            <small class="text-grey-dark mb-4 block">{{ post.date | date: "%b %d %Y" }}</small>
+            <div class="post">
+              {{ post.excerpt }}
+            </div>
+            <a href="{{ post.url }}" class="block link-orange text-2xl no-underline mb-4">Continue Reading...</a>
+          {% endif %}
+        {% endfor %}
+
+        <hr class="w-full h-px bg-orange">
+
+        <h2 class="mb-4 text-4xl font-semibold">Archive</h2>
         {% include posts.html %}
       </main>
     </div>

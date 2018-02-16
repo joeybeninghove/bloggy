@@ -29,6 +29,10 @@
  * @import "components/forms";
  */
 
+body.debug * {
+  outline: 1px solid red !important;
+}
+
 .post p, .post h2, .post h3, .post h4, .post h5, .post h6, .post .highlighter-rouge, .post ul, .post ol {
   @apply mb-6;
 }
