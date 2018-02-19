@@ -5,7 +5,6 @@ description:
   How to set up environment-specific credentials for Active Storage
   when using the same storage service
 date: 2018-02-13 12:13 -0500
-featured: true
 ---
 
 ## Do you want to use the <mark>same storage service</mark> (e.g. S3, Azure, Google) for <mark>multiple environments</mark> with Active Storage?

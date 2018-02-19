@@ -2,10 +2,11 @@
     <title>heroku logo</title>
   <style>
     .heroku-logo {
-        fill:#430098;
+        fill:white;
     }
     rect {
-        fill: transparent;
+        fill: url(#heroku-gradient);
+;
     }
   </style>
   <symbol id="heroku-text">
