@@ -23,11 +23,11 @@ layout: base
             <div class="post">
               {{ post.excerpt }}
             </div>
-            <a href="{{ post.url }}" class="block link-orange text-2xl no-underline mb-4">Continue Reading...</a>
+            <a href="{{ post.url }}" class="block link-orange text-2xl no-underline mb-8">Continue Reading...</a>
           {% endif %}
         {% endfor %}
 
-        <hr class="w-full h-px bg-orange">
+        <hr class="w-full h-px bg-orange mb-8">
 
         <h2 class="mb-4 text-2xl font-normal">Archive</h2>
         {% include posts.html %}

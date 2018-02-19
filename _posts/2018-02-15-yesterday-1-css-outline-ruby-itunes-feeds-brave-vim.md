@@ -7,7 +7,6 @@ description:
   Carbon Vim Plugin, Multiple Heroku Accounts, Brave Browser With Vim,
   IRB Command History, Import CSV Data Into PostgreSQL and Robots!!
 date: 2018-02-15 11:29 -0500
-featured: true
 ---
 
 ## Have you ever had one of those _serendipitous moments_ when ...

@@ -45,8 +45,12 @@ body.debug * {
   @apply text-base;
 }
 
+.post h6.code-caption {
+  @apply mb-0 bg-orange-lightest py-1 px-2 border-t border-l border-r border-black rounded-t-sm font-thin flex items-center;
+}
+
 .post .highlighter-rouge .highlight {
-  @apply p-2 overflow-x-scroll;
+  @apply p-2 overflow-x-scroll rounded-b-sm;
 }
 
 .post a {
