@@ -58,11 +58,11 @@ machine or some other server, <mark>run the command below</mark>.
 </h6>
 ```bash
 # upload/encrypt file
-cat mydatafile.csv \
+cat turtles.csv \
 | gpg --armor --symmetric --output - \
-| curl -X PUT --upload-file "-" https://transfer.sh/mydatafile.csv
+| curl -X PUT --upload-file "-" https://transfer.sh/turtles.csv
 
-# => https://transfer.sh/123abc/mydatafile.csv
+# => https://transfer.sh/123abc/turtles.csv
 ```
 
 ### OR
@@ -74,12 +74,12 @@ cat mydatafile.csv \
 ```bash
 # upload/encrypt file
 # conveniently copy the URL using pbcopy if on macOS
-cat mydatafile.csv \
+cat turtles.csv \
 | gpg --armor --symmetric --output - \
-| curl -X PUT --upload-file "-" https://transfer.sh/mydatafile.csv \
+| curl -X PUT --upload-file "-" https://transfer.sh/turtles.csv \
 | pbcopy
 
-# => https://transfer.sh/123abc/mydatafile.csv
+# => https://transfer.sh/123abc/turtles.csv
 ```
 
 You'll be prompted to enter a <mark>passphrase to encrypt</mark> the file before uploading it
@@ -108,8 +108,8 @@ Then download the file from the URL returned back to you from
 </h6>
 ```bash
 # download/decrypt the file
-curl https://transfer.sh/123abc/mydatafile.csv \
-| gpg --output - > mydatafile.csv
+curl https://transfer.sh/123abc/turtles.csv \
+| gpg --output - > turtles.csv
 ```
 
 You'll be prompted to enter the passphrase from Step 1 to <mark>decrypt</mark> the file and
@@ -141,10 +141,10 @@ the GPG encryption step altogether and make it even simpler.
 </h6>
 ```bash
 # upload file
-cat mydatafile.csv \
-| curl -X PUT --upload-file "-" https://transfer.sh/mydatafile.csv
+cat turtles.csv \
+| curl -X PUT --upload-file "-" https://transfer.sh/turtles.csv
 
-# => https://transfer.sh/123abc/mydatafile.csv
+# => https://transfer.sh/123abc/turtles.csv
 ```
 
 <h6 class="code-caption">
@@ -153,5 +153,5 @@ cat mydatafile.csv \
 </h6>
 ```bash
 # download file
-curl https://transfer.sh/123abc/mydatafile.csv --output mydatafile.csv
+curl https://transfer.sh/123abc/turtles.csv --output turtles.csv
 ```
