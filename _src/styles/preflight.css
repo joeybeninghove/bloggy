@@ -1,0 +1,9 @@
+@import "syntax";
+
+body.debug * {
+  outline: 1px solid red !important;
+}
+
+mark {
+  @apply bg-yellow-lighter;
+}

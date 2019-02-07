@@ -1,7 +1,4 @@
-import "./styles/syntax.css"
 import "./styles/styles.css"
-import "./styles/funky-border-utilities.css"
-import "./styles/responsive-video.css"
 
 import { Application } from "stimulus"
 import { definitionsFromContext } from "stimulus/webpack-helpers"

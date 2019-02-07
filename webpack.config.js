@@ -1,13 +1,12 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const MinifyPlugin = require("babel-minify-webpack-plugin");
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/index.js'),
+  entry: path.resolve(__dirname, '_src/index.js'),
   devtool: "source-map",
   output: {
     filename: 'scripts.js',
@@ -23,7 +22,7 @@ module.exports = {
           {
             loader: "babel-loader",
             options: {
-              presets: ["env"],
+              presets: ["@babel/preset-env"],
               plugins: ["transform-class-properties"]
             }
           }
@@ -32,28 +31,23 @@ module.exports = {
       {
         test: /\.css$/,
         include: [
-          path.resolve(__dirname, 'src/styles'),
+          path.resolve(__dirname, '_src/styles'),
         ],
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 1,
-                minimize: true,
-              }
-            },
-            'postcss-loader'
-          ]
-        })
+        use: [
+          { loader: MiniCssExtractPlugin.loader },
+          { loader: "css-loader" },
+          { loader: "postcss-loader" }
+        ]
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin('styles.css'),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    }),
     new HtmlWebpackPlugin({
-      template: 'src/templates/base.html',
+      template: '_src/templates/base.html',
       filename: '../_layouts/base.html',
       hash: true
     }),
@@ -61,13 +55,11 @@ module.exports = {
       defaultAttribute: 'async'
     }),
     new CopyWebpackPlugin([{
-      from: path.resolve('src/images')
+      from: path.resolve('_src/images'),
+      to: path.resolve('./assets/images')
     }]),
     new CopyWebpackPlugin([{
-      from: path.resolve('src/downloads')
-    }]),
-    new CopyWebpackPlugin([{
-      from: path.resolve('src/images/favicons/favicon.ico'),
+      from: path.resolve('_src/images/favicons/favicon.ico'),
       to: path.resolve('./')
     }]),
     new BrowserSyncPlugin({
@@ -75,7 +67,6 @@ module.exports = {
       port: 3000,
       proxy: 'http://localhost:4000',
       files: ['_site', '_src']
-    }),
-    new MinifyPlugin()
+    })
   ],
 };

@@ -14,16 +14,15 @@ layout: base
       <main class="p-4 md:w-2/3">
         {% for post in site.posts %}
           {% if post.featured == true %}
-            <h1 class="mb-2 text-4xl font-semibold leading-tight">
-              <a href="{{ post.url }}" class="no-underline text-grey-darkest">
+            <h1 class="mb-4 text-2xl font-normal leading-tight">
+              <a href="{{ post.url }}" class="no-underline link-orange">
                 {{ post.title }}
               </a>
             </h1>
-            <small class="text-grey-dark mb-4 block">{{ post.date | date: "%b %d %Y" }}</small>
             <div class="post">
               {{ post.excerpt }}
             </div>
-            <a href="{{ post.url }}" class="block link-orange text-2xl no-underline mb-8">Continue Reading...</a>
+            <a href="{{ post.url }}" class="block link-orange text-xl no-underline mb-6">Continue Reading...</a>
           {% endif %}
         {% endfor %}
 

@@ -9,7 +9,7 @@ date: 2018-02-16 18:03 -0500
 featured: true
 ---
 
-## Do you need to transfer files to Heroku for:
+**Do you need to transfer files to Heroku for:**
 
 * performing a <mark>one-off operation</mark> on some data?
 * like maybe <mark>importing some data</mark> from a CSV file into a Heroku database?

@@ -1,0 +1,13 @@
+@import "funky-border-utilities";
+
+.bordered-image {
+  @apply pt-1 pl-1 pr-1 bg-white border border-solid mr-2;
+}
+
+.link-orange {
+  @apply text-orange-dark;
+}
+
+.link-orange:hover {
+  @apply text-orange;
+}

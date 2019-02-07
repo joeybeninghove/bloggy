@@ -1,0 +1,68 @@
+@import "responsive-video";
+
+.post p, .post h2, .post h3, .post h4, .post h5, .post h6, .post .highlighter-rouge, .post ul, .post ol {
+  @apply mb-6;
+}
+
+.post p {
+  @apply mb-4;
+}
+
+.post h2, .post h3, .post h4, .post h5, .post h6 {
+  @apply font-medium mb-6 break-words;
+}
+
+.post h2 {
+  @apply text-3xl;
+}
+
+.post h6 {
+  @apply text-base;
+}
+
+.post h6.code-caption {
+  @apply mb-0 bg-orange-lightest py-1 px-2 border-t border-l border-r border-black rounded-t-sm font-thin flex items-center;
+}
+
+.post .highlighter-rouge .highlight {
+  @apply p-2 overflow-x-scroll rounded-b-sm;
+}
+
+.post a {
+  @apply text-orange-dark no-underline;
+}
+
+.post a:hover {
+  @apply text-orange;
+}
+
+.post code.highlighter-rouge {
+  @apply bg-grey-light font-mono px-1 break-words;
+}
+
+.post iframe {
+  @apply mb-6;
+}
+
+.tldr p {
+  @apply mb-2;
+}
+
+.main:after {
+  content: "";
+  background-image: url("/assets/abbott-costello.jpg");
+  z-index: -1;
+  @apply bg-no-repeat bg-cover bg-grey-light absolute min-h-screen w-full border-b-6 opacity-10;
+}
+
+.antenna-l, .antenna-r {
+  @apply h-16 w-4 bg-grey rounded-t-lg;
+}
+
+.antenna-l {
+  transform: skew(45deg);
+}
+
+.antenna-r {
+  transform: skew(-45deg);
+}
