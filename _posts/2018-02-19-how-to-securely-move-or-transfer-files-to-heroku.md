@@ -6,7 +6,6 @@ description:
   instance, like for example, to import some data from another server, here is
   the easiest way I've found to do it.
 date: 2018-02-16 18:03 -0500
-featured: true
 ---
 
 **Do you need to transfer files to Heroku for:**
