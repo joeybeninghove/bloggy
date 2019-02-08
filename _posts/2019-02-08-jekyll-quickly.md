@@ -22,4 +22,4 @@ Here it is: [jekyll-fun](https://github.com/joeybeninghove/jekyll-fun)
 - [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) for generating SEO tags
 - [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap) for generating a sitemap
 
-Maybe someone else will find it useful.
+Maybe someone else will find it useful.  More info can be found in the project [README](https://github.com/joeybeninghove/jekyll-fun/blob/master/README.md).
