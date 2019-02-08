@@ -6,8 +6,8 @@ date: 2018-02-02 11:17 -0500
 ---
 
 <div class="flex flex-col mb-6 tldr">
-  <div class="bg-orange-lighter p-2 font-medium border border-b-0 border-orange rounded-t-sm">TL;DR</div>
-  <div class="p-2 bg-orange-lightest border-l border-r border-b border-orange
+  <div class="bg-blue-lighter p-2 font-medium border border-b-0 border-blue rounded-t-sm">TL;DR</div>
+  <div class="p-2 bg-blue-lightest border-l border-r border-b border-blue
   rounded-b-sm">
     <p>
       Exploring and learning ways to model products and variants in an ecommerce

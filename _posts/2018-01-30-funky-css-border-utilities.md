@@ -6,8 +6,8 @@ date: 2018-01-30 13:14 -0500
 ---
 
 <div class="flex flex-col mb-6 tldr">
-  <div class="bg-orange-lighter p-2 font-medium border border-b-0 border-orange rounded-tl-sm-lg rounded-tr-sm-sm">TL;DR</div>
-  <div class="p-2 bg-orange-lightest border-l border-r border-b border-orange rounded-br-md-xl rounded-bl-lg-sm">
+  <div class="bg-blue-lighter p-2 font-medium border border-b-0 border-blue rounded-tl-sm-lg rounded-tr-sm-sm">TL;DR</div>
+  <div class="p-2 bg-blue-lightest border-l border-r border-b border-blue rounded-br-md-xl rounded-bl-lg-sm">
     <p>
       If you need a quick way to apply some funky CSS border radiuses, I've built a
       script to generate a set of utility classes to make it easier.

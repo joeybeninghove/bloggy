@@ -6,8 +6,8 @@ date: 2018-01-11 18:32 -0500
 ---
 
 <div class="flex flex-col mb-6 tldr">
-  <div class="bg-orange-lighter p-2 font-medium border border-b-0 border-orange rounded-t-sm">TL;DR</div>
-  <div class="p-2 bg-orange-lightest border-l border-r border-b border-orange
+  <div class="bg-blue-lighter p-2 font-medium border border-b-0 border-blue rounded-t-sm">TL;DR</div>
+  <div class="p-2 bg-blue-lightest border-l border-r border-b border-blue
   rounded-b-sm">
     <p>
       This is just a quick demonstration of <a href="https://tailwindcss.com">Tailwind CSS</a>, a utility-first CSS
