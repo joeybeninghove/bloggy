@@ -50,7 +50,7 @@
 
 .main:after {
   content: "";
-  background-image: url("/assets/abbott-costello.jpg");
+  background-image: url("/assets/images/abbott-costello.jpg");
   z-index: -1;
   @apply bg-no-repeat bg-cover bg-grey-light absolute min-h-screen w-full border-b-6 opacity-10;
 }
