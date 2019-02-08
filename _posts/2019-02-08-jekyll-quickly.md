@@ -4,7 +4,6 @@ title: Jekyll, Quickly
 description:
   In kind of a spin-off of fun, this is a Jekyll starter kit that can be used to quickly build out a production-ready Jekyll static site.
 date: 2019-02-08 00:44 -0500
-featured: true
 ---
 
 I may not actually _write_ blog posts that often, but I sure can spin my wheels building and updating my blog engine. :smirk: 
