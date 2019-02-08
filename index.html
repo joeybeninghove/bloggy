@@ -14,11 +14,12 @@ layout: base
       <main class="p-8 md:w-2/3">
         {% for post in site.posts %}
           {% if post.featured == true %}
-            <h1 class="mb-4 text-4xl font-semibold leading-tight">
+            <h1 class="mb-2 text-4xl font-semibold leading-tight">
               <a href="{{ post.url }}" class="no-underline link">
                 {{ post.title }}
               </a>
             </h1>
+            <small class="text-grey-dark mb-4 block">{{ post.date | date: "%b %d %Y" }}</small>
             <div class="post">
               {{ post.excerpt }}
             </div>

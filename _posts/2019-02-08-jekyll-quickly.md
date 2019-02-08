@@ -7,7 +7,9 @@ date: 2019-02-08 00:44 -0500
 featured: true
 ---
 
-I may not actually _write_ blog posts that often, but I sure can spin my wheels building and updating my blog engine.  I recently updated my Jekyll setup and decided to spin it off into its own starter kit that can be used to easily spin up other Jekyll sites when needed.
+I may not actually _write_ blog posts that often, but I sure can spin my wheels building and updating my blog engine. :smirk: 
+
+I recently updated my Jekyll setup and decided to spin it off into its own starter kit that can be used to easily spin up other Jekyll sites when needed.
 
 Here it is: [jekyll-fun](https://github.com/joeybeninghove/jekyll-fun)
 
