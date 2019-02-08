@@ -5,7 +5,7 @@ date: 2011/08/10 12:00:00
 tags: [mongoid, spork, performance, inheritance, preloading, rspec, mongodb]
 ---
 
-<img src='/assets/speed.jpg' alt='Speed!!!' class='bordered-image' />
+<img src='/assets/images/speed.jpg' alt='Speed!!!' class='bordered-image' />
 
 ## Background
 

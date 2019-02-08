@@ -5,7 +5,7 @@ date: 2010/10/15 10:00:00
 tags: [stress, exercise, music, programming]
 ---
 
-<img src='/assets/rock_hard_place.jpg' alt='Between a rock and a hard place'
+<img src='/assets/images/rock_hard_place.jpg' alt='Between a rock and a hard place'
 class='float-right ml-4 bordered-image' />
 
 So there you are, gearing up to implement the next feature in the application you're building, and all of a sudden, BAM!

@@ -32,5 +32,5 @@ It was a really good experience for me to learn a lot of new things at once, inc
 I didn't extract any components at all, so there is a lot of repitition in the markup, but extracting those out is really straightforward and is definitely something I'd be doing on a real app where this was being used.
 
 ## Preview Pics
-<img src="/assets/freshbooks-side-by-side.png" class="bordered-image">
-<img src="/assets/freshbooks-full.png" class="bordered-image">
+<img src="/assets/images/freshbooks-side-by-side.png" class="bordered-image">
+<img src="/assets/images/freshbooks-full.png" class="bordered-image">

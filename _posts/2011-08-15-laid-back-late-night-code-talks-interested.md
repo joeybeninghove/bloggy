@@ -5,7 +5,7 @@ date: 2011/08/14 10:30:00
 tags: [talks, chat, learning]
 ---
 
-<img src='/assets/microphone.png' alt="Let's talk!" class='float-left mr-4 bordered-image' />
+<img src='/assets/images/microphone.png' alt="Let's talk!" class='float-left mr-4 bordered-image' />
 
 Last week, I had a crazy notion of wanting to get a few other Ruby developers together for a completely informal late-night group chat about testing, gem dependencies and dealing with large Rails applications.  Many thanks to [Brian Hogan](http://bphogan.com), [Derick Bailey](http://derickbailey.lostechies.com) and [Mel Riffe](http://melriffe.info) for hanging with me in a Google+ Hangout last Wednesday night.  I learned a ton and it was a LOT of fun!
 

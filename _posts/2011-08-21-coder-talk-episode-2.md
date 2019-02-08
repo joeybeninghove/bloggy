@@ -5,7 +5,7 @@ date: 2011/08/21 12:00:00
 tags: [podcast, coder-talk]
 ---
 
-<img src='/assets/microphone.jpg' alt='Coder Talk' class='float-right' />
+<img src='/assets/images/microphone.jpg' alt='Coder Talk' class='float-right' />
 
 In this week's marathon Coder Talk, my co-host [Derick Bailey](http://derickbailey.lostechies.com) and I are joined by [Thomas Brewer](http://th3mus1cman.me) and [Nathan Palmer](http://twitter.com/nathanpalmer) to discuss Coffeescript, Haml, Sass, PHP unit testing and frameworks, transitioning from .NET to Ruby, Vim and whether or not it makes you more productive, iPads with kids and how the Kahn Academy is changing how we educate our kids.  We had a blast in this episode!  
 

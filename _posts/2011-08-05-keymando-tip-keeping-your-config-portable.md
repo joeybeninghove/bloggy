@@ -5,7 +5,7 @@ date: 2011/08/05 21:50:00
 tags: [osx, keymando, mouseless, keyboard, shortcuts, macros, automation, portability]
 ---
 
-<img src='/assets/keymando.png' alt='Keymando' class='float-right ml-4' />
+<img src='/assets/images/keymando.png' alt='Keymando' class='float-right ml-4' />
 
 One of the tools I'm having a blast using these days is [Keymando](http://keymando.com) by his awesomeness [Kevin
 Colyar](http://kevin.colyar.net).  Being a huge keyboard junkie and mouseless computing fanatic, this is the kind of
@@ -23,7 +23,7 @@ in my .dotfiles directory.  The default location for Keymando's configuration fi
 Support/Keymando/keymandorc.rb***.  In the current version of Keymando, you can change your target location for its
 configuration and plugins directories through its ***Setup*** screen.
 
-<img src='/assets/keymando_setup.png' alt='Keymando Setup' />
+<img src='/assets/images/keymando_setup.png' alt='Keymando Setup' />
 
 You can click each one and it will pop up a dialog allowing you to choose an alternate location for your Keymando
 configuration file, directory and plugins directory.  If you manage a ***hidden*** .dotfiles directory like I do,
@@ -34,7 +34,7 @@ dialogs](http://www.macworld.com/article/142884/2009/09/106seehidden.html).  You
 store my Keymando configuration and plugins, which of course is part of my Git repository so it gets all the benefits of
 that as well.
 
-<img src='/assets/osx_finder_dialog.png' alt='OSX Finder dialog showing hidden
+<img src='/assets/images/osx_finder_dialog.png' alt='OSX Finder dialog showing hidden
 files/folders' class='bordered' />
 
 Each developer/power user typically has their own way of managing configuration files, but hopefully this showed you an

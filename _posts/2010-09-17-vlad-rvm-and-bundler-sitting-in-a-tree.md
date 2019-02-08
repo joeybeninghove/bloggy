@@ -20,7 +20,7 @@ deploy it somehow.  Manual deployments are for the birds, so my first knee-jerk 
 Capistrano wired up to do the automated deployment.  But after taking a glance at my existing Capistrano
 deployment script for my Rails 3 application, it seemed like overkill for this tiny Sinatra ditty.
 
-<img src='/assets/vlad.png' alt='Vlad the Deployer' style='float: right; margin: 10px' />
+<img src='/assets/images/vlad.png' alt='Vlad the Deployer' style='float: right; margin: 10px' />
 
 The first alternative I ran across was a deployment tool named [Vlad the Deployer](http://rubyhitsquad.com/Vlad_the_Deployer.html) 
 (which clearly gets an award for the best name ever).  What attracted me right off the bat was the simplicity of its usage

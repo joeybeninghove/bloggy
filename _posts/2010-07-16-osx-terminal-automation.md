@@ -31,22 +31,22 @@ First step is to set up specific terminal settings for each window/tab based on 
 behave when they start.  Here is an example of a basic terminal that changes to the directory I want 
 when started.
 
-<img src='/assets/terminal.png' alt='terminal' />
+<img src='/assets/images/terminal.png' alt='terminal' />
 
 And here is a separate terminal setting for automatically starting Compass when the terminal session is 
 started.
 
-<img src='/assets/terminal-compass.png' alt='terminal - compass' />
+<img src='/assets/images/terminal-compass.png' alt='terminal - compass' />
 
 And here is a another one for autostarting the rails server when the terminal session is started.
 
-<img src='/assets/terminal-rails-server.png' alt='terminal - rails server' />
+<img src='/assets/images/terminal-rails-server.png' alt='terminal - rails server' />
 
 Now, all these can easily be combined into a 'Windows Group' that can be opened by the OSX Terminal in 
 one shot, opening multiple terminal windows/tabs all at once using separate terminal settings.  Just 
 open the terminal windows/tabs and position them how you like them, then just save it as a window group.
 
-<img src='/assets/terminal-windows-group.png' alt='terminal - windows group' />
+<img src='/assets/images/terminal-windows-group.png' alt='terminal - windows group' />
 
 Here's a quick video of a window group in action:
 
