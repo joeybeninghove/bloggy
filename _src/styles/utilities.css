@@ -4,6 +4,14 @@
   @apply pt-1 pl-1 pr-1 bg-white border border-solid mr-2;
 }
 
+.link {
+  @apply text-blue-dark;
+}
+
+.link:hover {
+  @apply text-blue;
+}
+
 .link-orange {
   @apply text-orange-dark;
 }
