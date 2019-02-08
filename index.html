@@ -2,19 +2,19 @@
 layout: base
 ---
 
-<body class="font-sans bg-grey-lightest text-grey-darkest border-t-4 border-blue leading-normal">
-  <div class="flex flex-col">
+<body class="font-sans bg-grey-lightest text-grey-darkest border-t-4 border-grey leading-normal">
+  <div class="flex flex-col bg-white">
     <div class="sm:flex mb-4">
       <header class="p-4 sm:w-1/2 md:w-1/3">
         {% include header-left.html %}
       </header>
 
-      <hr class="w-full h-px bg-blue sm:hidden">
+      <hr class="w-full h-px bg-grey sm:hidden">
 
       <main class="p-8 md:w-2/3">
         {% for post in site.posts %}
           {% if post.featured == true %}
-            <h1 class="mb-4 text-2xl font-normal leading-tight">
+            <h1 class="mb-4 text-4xl font-normal leading-tight">
               <a href="{{ post.url }}" class="no-underline link">
                 {{ post.title }}
               </a>
@@ -26,7 +26,7 @@ layout: base
           {% endif %}
         {% endfor %}
 
-        <hr class="w-full h-px bg-blue mb-8">
+        <hr class="w-full h-px bg-grey mb-8">
 
         <h2 class="mb-4 text-2xl font-normal">Archive</h2>
         {% include posts.html %}

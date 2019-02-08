@@ -5,11 +5,11 @@
 }
 
 .link {
-  @apply text-blue-dark;
+  @apply text-grey-darkest;
 }
 
 .link:hover {
-  @apply text-blue;
+  @apply text-grey-darker;
 }
 
 .link-orange {
