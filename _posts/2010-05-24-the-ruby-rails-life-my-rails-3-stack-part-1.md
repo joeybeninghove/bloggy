@@ -3,7 +3,7 @@ layout: post
 title: My Rails 3 Stack - Part 1
 date: 2010/05/24 22:35:00
 tags: [ruby, rails, mongodb, mongoid, devise, cancan, sass, haml, blueprint, compass, jquery]
-canonical_url: http://www.lostechies.com/blogs/joeydotnet/archive/2010/05/24/the-ruby-rails-life-my-rails-3-stack-part-1.aspx
+canonical_url: //www.lostechies.com/blogs/joeydotnet/archive/2010/05/24/the-ruby-rails-life-my-rails-3-stack-part-1.aspx
 ---
 
 As some of you might know, About a month ago I left my almost 10 year career as a Microsoft developer to become 

@@ -3,7 +3,7 @@ layout: post
 title: Cucumber, A Brief Overview
 date: 2010/06/01 15:30:00
 tags: [ruby, bdd, testing, cucumber]
-canonical_url: http://www.lostechies.com/blogs/joeydotnet/archive/2010/06/01/cucumber.aspx
+canonical_url: //www.lostechies.com/blogs/joeydotnet/archive/2010/06/01/cucumber.aspx
 ---
 
 ## Cucumber

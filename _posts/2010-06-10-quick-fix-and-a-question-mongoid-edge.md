@@ -3,7 +3,7 @@ layout: post
 title: "Quick Fix (and a question): Mongoid Edge"
 date: 2010/06/10 12:44:00
 tags: [ruby, mongodb, mongoid, rspec]
-canonical_url: http://www.lostechies.com/blogs/joeydotnet/archive/2010/06/10/quick-fix-and-a-question-mongoid-edge.aspx
+canonical_url: //www.lostechies.com/blogs/joeydotnet/archive/2010/06/10/quick-fix-and-a-question-mongoid-edge.aspx
 ---
 
 I just went throught the process of upgrading my current app to the latest edge for Rails 3, Mongoid 

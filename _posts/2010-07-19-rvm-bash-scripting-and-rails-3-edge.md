@@ -3,7 +3,7 @@ layout: post
 title: RVM, Bash Scripting and Rails 3 Edge
 date: 2010/07/19 17:34:00
 tags: [rvm, bash, rails]
-canonical_url: http://www.lostechies.com/blogs/joeydotnet/archive/2010/07/19/rvm-bash-scripting-and-rails-3-edge.aspx
+canonical_url: //www.lostechies.com/blogs/joeydotnet/archive/2010/07/19/rvm-bash-scripting-and-rails-3-edge.aspx
 ---
 
 I've only begun to tap into the power of bash scripting, but I had a need to automate setting up a 

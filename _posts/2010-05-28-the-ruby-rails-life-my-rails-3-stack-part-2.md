@@ -3,7 +3,7 @@ layout: post
 title: My Rails 3 Stack - Part 2
 date: 2010/05/28 09:00:00
 tags: [ruby, rails, bdd, capistrano, rspec, factory_girl, testing, steak, cucumber, rstakeout, deployment]
-canonical_url: http://www.lostechies.com/blogs/joeydotnet/archive/2010/05/28/the-ruby-rails-life-my-rails-3-stack-part-2.aspx
+canonical_url: //www.lostechies.com/blogs/joeydotnet/archive/2010/05/28/the-ruby-rails-life-my-rails-3-stack-part-2.aspx
 ---
 
 ## Rails Deployment & Testing

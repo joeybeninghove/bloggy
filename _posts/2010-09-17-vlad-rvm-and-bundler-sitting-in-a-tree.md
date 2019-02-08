@@ -3,7 +3,7 @@ layout: post
 title: Vlad, RVM and Bundler sittin' in a tree
 date: 2010/09/17 2:21:00
 tags: [ruby, sinatra, deployment, vlad, rvm]
-canonical_url: http://www.lostechies.com/blogs/joeydotnet/archive/2010/09/17/vlad-rvm-and-bundler-sittin-in-a-tree.aspx
+canonical_url: //www.lostechies.com/blogs/joeydotnet/archive/2010/09/17/vlad-rvm-and-bundler-sittin-in-a-tree.aspx
 ---
 
 (Thanks to Chad for nudging me to write this post :)

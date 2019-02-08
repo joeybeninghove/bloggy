@@ -3,7 +3,7 @@ layout: post
 title: OSX Terminal Automation
 date: 2010/07/16 22:42:00
 tags: [osx, terminal, automation]
-canonical_url: http://www.lostechies.com/blogs/joeydotnet/archive/2010/07/16/quick-tip-osx-terminal-automation.aspx
+canonical_url: //www.lostechies.com/blogs/joeydotnet/archive/2010/07/16/quick-tip-osx-terminal-automation.aspx
 ---
 
 ## My OSX Terminal Environment (as of today)

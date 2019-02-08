@@ -3,7 +3,7 @@ layout: post
 title: Getting plugged into Ruby
 date: 2010/06/26 00:28:00
 tags: [ruby, community, podcasts, screencasts]
-canonical_url: http://www.lostechies.com/blogs/joeydotnet/archive/2010/06/26/getting-plugged-into-ruby.aspx
+canonical_url: //www.lostechies.com/blogs/joeydotnet/archive/2010/06/26/getting-plugged-into-ruby.aspx
 ---
 
 Brad Mead asked a question on my [previous

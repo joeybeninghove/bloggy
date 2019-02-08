@@ -3,7 +3,7 @@ layout: post
 title: From ALT.NET to NOT.NET
 date: 2010/06/23 12:44:00
 tags: [ruby, rails, microprenuer, community]
-canonical_url: http://www.lostechies.com/blogs/joeydotnet/archive/2010/06/23/from-alt-net-to-not-net.aspx
+canonical_url: //www.lostechies.com/blogs/joeydotnet/archive/2010/06/23/from-alt-net-to-not-net.aspx
 ---
 
 For a long time now I've been known as "joeyDotNet". Of course I'll never make the mistake tying my 
